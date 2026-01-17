@@ -22,7 +22,6 @@
     "antd": "^5.27.4",
     "axios": "^1.6.5",
     "bootstrap": "^5.3.8",
-    "chakra-ui": "^0.3.9",
     "framer-motion": "^12.23.22",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.544.0",
