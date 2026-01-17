@@ -5,13 +5,14 @@ import { useAuthStore, useCartStore } from '../store';
 
 export default function Header() {
   const { user, logout } = useAuthStore();
-  const { items } = useCartStore();
+  const { items, clearCart } = useCartStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleLogout = () => {
     logout();
+    clearCart();
     navigate('/');
   };
 
